@@ -85,8 +85,8 @@ group :development do
 end
 
 group :test, :development do
-  #gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i  
-  #gem 'guard-rspec' 
+  #gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
+  #gem 'guard-rspec'
    gem 'factory_girl_rails', :require => false
   unless ENV["TRAVIS"]
     gem 'ruby-debug-base19', '0.11.23' if RUBY_VERSION.include? '1.9.1'
@@ -115,6 +115,7 @@ group :test do
   gem 'rspec-instafail', '>= 0.1.7', :require => false
   gem 'fuubar'
 
-  gem 'diaspora-client', :path => '~/workspace/diaspora-client' #:git => 'git://github.com/diaspora/diaspora-client.git'
+  gem 'diaspora-client', :path => '~/workspace/diaspora-client'
+                         #:git => 'git://github.com/diaspora/diaspora-client.git'
 
 end
